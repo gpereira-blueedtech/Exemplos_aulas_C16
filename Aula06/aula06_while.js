@@ -104,4 +104,6 @@ do {
 } while (pergunta != 'nao')
 
 
+
+
 console.log();
