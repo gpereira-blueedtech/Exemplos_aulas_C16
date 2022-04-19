@@ -16,6 +16,9 @@ const prompt = require('prompt-sync')();
 
 // while (numero < 100){
 //     console.log(numero);
+//     // Esses 3 exemplos fazem a mesma coisa, somam 1 ao valor da variável.
+//     numero = numero + 1
+//     numero += 1;
 //     numero++ // Nesse momento ele acresce número em 1
 // }
 
@@ -102,8 +105,5 @@ do {
     console.log();
     pergunta = prompt('Você deseja jogar novamente? ').toLowerCase();
 } while (pergunta != 'nao')
-
-
-
 
 console.log();
