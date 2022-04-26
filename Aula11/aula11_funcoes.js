@@ -19,7 +19,7 @@ Coloque uma roupa limpa
 
 
 
-
+Função:
 Vá tomar banho.
 
 Faça um bolo de chocolate
@@ -176,3 +176,45 @@ console.log();
 // }
 
 // pausa('Olá', 3000)
+
+
+
+
+//              ## EXERCICIOS
+
+/*Faça um programa, com uma função que necessite de três argumentos: 
+dois números e um sinal de operador matemático (+, -, * ou /). 
+Ela deve fazer o cálculo indicado pelo operador usando os dois números passados.
+*/
+
+// function calculadora(num1, num2, oper){
+//     let resultado
+//     if (oper == '+'){
+//         resultado = num1 + num2;
+//     } else if (oper == '-'){
+//         resultado = num1 - num2;
+//     } else if (oper == '*'){
+//         resultado = num1 * num2;
+//     } else if (oper == '/'){
+//         resultado = num1 / num2;
+//     } else {
+//         console.log('Operador inválido.');
+//     }
+
+//     console.log(`O resultado é: ${resultado}`);
+// }
+
+// let numero1 = +prompt('Digite o primeiro número: ');
+// let numero2 = +prompt('Digite o segundo número: ');
+// let operador = prompt('Qual operação? ');
+
+// calculadora(numero1, numero2, operador);
+
+
+
+
+// // Exemplo de uso do split:
+// let data = prompt('Digite a data no formato DD/MM/AAA: ');
+// dataLista = data.split('/');
+
+// console.log(dataLista)
