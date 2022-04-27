@@ -18,8 +18,6 @@ function chover_meteoro(possibilidade){
     }
 }
 
-// chover_meteoro(20);
-
 // for (let i = 0; i < 5; i++){
 //     chover_meteoro();
 // }
@@ -28,30 +26,32 @@ function chover_meteoro(possibilidade){
 
 
 // // Usando uma função para dar um break em um ciclo
-let distancia = +prompt('Quantos quadrantes você precisa andar? ');
+// // A função não pode ter um break dentro dela
+// // Por isso uso um return, e caso ela retorne um valor especificado (nesse caso, true), vai dar o break
+// let distancia = +prompt('Quantos quadrantes você precisa andar? ');
 
-for (let i = 1; i <= distancia; i++){
-    console.log(`Quadrante ${i}:`)
-    // let choveu = chover_meteoro(30);
-    // if (choveu == true){
-    //     console.log();
-    //     console.log('AVISO!!!')
-    //     console.log('Você pegou uma chuva de meteoros e não conseguiu continuar!');
-    //     break;
-    // }
+// for (let i = 1; i <= distancia; i++){
+//     console.log(`Quadrante ${i}:`)
+//     // let choveu = chover_meteoro(30);
+//     // if (choveu == true){
+//     //     console.log();
+//     //     console.log('AVISO!!!')
+//     //     console.log('Você pegou uma chuva de meteoros e não conseguiu continuar!');
+//     //     break;
+//     // }
 
-    // // Outra forma:
-    // // Se o retorno for true, vai entrar no if e dar o break no ciclo
-    if (chover_meteoro(30)){
-        console.log();
-        console.log('AVISO!!!')
-        console.log('Você pegou uma chuva de meteoros e não conseguiu continuar!');
-        break;
-    }
+//     // // Outra forma:
+//     // // Se o retorno for true, vai entrar no if e dar o break no ciclo
+//     if (chover_meteoro(30)){
+//         console.log();
+//         console.log('AVISO!!!')
+//         console.log('Você pegou uma chuva de meteoros e não conseguiu continuar!');
+//         break;
+//     }
     
-    // Só para pular um espaço entre cada execução
-    console.log();
-}
+//     // Só para pular um espaço entre cada execução
+//     console.log();
+// }
 
 
 
@@ -60,7 +60,7 @@ for (let i = 1; i <= distancia; i++){
 
 
 
-
+// // O return ENCERRA uma função e RETORNA (devolve, entrega) o valor passado.
 function esquiva(lvl = 1){
     // Sorteio um número entre 1 e 20 e guardo em d20
     let d20 = Math.floor(Math.random()*20)+1
@@ -89,6 +89,10 @@ nivel = 10
 
 
 
+
+
+
+
 // lista = ['Gabriel','Jorge','Thais'];
 
 // // Exemplos de métodos que RETORNAM um valor
@@ -106,7 +110,7 @@ nivel = 10
 
 
 
-
+// // Retornando mais de um valor em uma lista:
 function calculadora(num1, num2){
        
     let soma = num1 + num2;
