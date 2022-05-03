@@ -150,6 +150,12 @@ const prompt = require('prompt-sync')();
 
 
 
+
+
+
+
+// Exemplo de método de controle de tempo simples:
+
 let personagem = {
     cansaco: 0,
     vital: 10,
@@ -157,30 +163,17 @@ let personagem = {
 
     horas: 6,
     dia: 1,
+    periodo: 'Manhã',
 
     comer: function(){
         this.peso++
     },
 
     bio: function(){
-        if (this.horas >= 19){
-            console.log(`
-            Está de noite.
-            `)
-        } else if(this.horas >= 12){
-            console.log(`
-            Está de tarde.
-            `)
-        } else if(this.horas >= 6){
-            console.log(`
-            Está de manhã.
-            `)
-        } else {
-            console.log(`
-            Está de madrugada.`)
-        }
         console.log(`
         São ${this.horas} horas do dia ${this.dia}.
+        Agora é ${this.periodo}.
+        
         Você está:
         Vitalidade: ${this.vital}
         Cansaço: ${this.cansaco}
@@ -193,6 +186,16 @@ let personagem = {
         if (this.horas >= 24){
             this.horas -= 24;
             this.dia++
+        }
+
+        if (this.horas >= 19){
+            this.periodo = 'Noite'
+        } else if(this.horas >= 12){
+            this.periodo = 'Tarde'
+        } else if(this.horas >= 6){
+            this.periodo = 'Manhã'
+        } else {
+            this.periodo = 'Madrugada'
         }
     }
 }
@@ -219,5 +222,42 @@ while(true){
         break;
     } 
 }
+
+
+
+
+
+
+
+
+
+
+// // Exemplo de método para passar períodos
+
+// let tempo = {
+//     periodo: 'Manhã',
+
+//     passaPeriodo: function(){
+//         if (this.periodo == 'Manhã'){
+//             this.periodo = 'Tarde'
+//         } else if (this.periodo == 'Tarde'){
+//             this.periodo = 'Noite'
+//         } else if (this.periodo == 'Noite'){
+//             this.periodo = 'Manhã'
+//         }
+//     }
+// }
+
+// console.log(tempo.periodo)
+
+// tempo.passaPeriodo();
+
+// console.log(tempo.periodo)
+
+
+
+
+
+
 
 console.log();
